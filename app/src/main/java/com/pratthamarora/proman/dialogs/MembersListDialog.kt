@@ -34,7 +34,6 @@ abstract class MembersListDialog(
         view.tvTitle.text = title
 
         if (list.size > 0) {
-
             view.rvList.layoutManager = LinearLayoutManager(context)
             adapter = MemberListItemsAdapter(context, list)
             view.rvList.adapter = adapter

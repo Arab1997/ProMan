@@ -30,7 +30,7 @@ class FirestoreClass {
                 activity.hideProgressDialog()
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error writing document",
+                    "Ошибка при написании документа",
                     e
                 )
             }
@@ -71,7 +71,7 @@ class FirestoreClass {
                 }
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while getting loggedIn user details",
+                    "Ошибка при получении сведений о пользователе loggedIn",
                     e
                 )
             }
@@ -82,7 +82,7 @@ class FirestoreClass {
             .document(getCurrentUserID()) // Document ID
             .update(userHashMap) // A hashmap of fields which are to be updated.
             .addOnSuccessListener {
-                Log.e(activity.javaClass.simpleName, "Data updated successfully!")
+                Log.e(activity.javaClass.simpleName, "Данные успешно обновлены!")
 
                 when (activity) {
                     is MainActivity -> {
@@ -105,7 +105,7 @@ class FirestoreClass {
 
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while creating a board.",
+                    "Ошибка при создании доски.",
                     e
                 )
             }
@@ -117,9 +117,9 @@ class FirestoreClass {
             .document()
             .set(board, SetOptions.merge())
             .addOnSuccessListener {
-                Log.e(activity.javaClass.simpleName, "Board created successfully.")
+                Log.e(activity.javaClass.simpleName, "Доска создана успешно.")
 
-                Toast.makeText(activity, "Board created successfully.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(activity, "Доска создана успешно.", Toast.LENGTH_SHORT).show()
 
                 activity.boardCreatedSuccessfully()
             }
@@ -127,7 +127,7 @@ class FirestoreClass {
                 activity.hideProgressDialog()
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while creating a board.",
+                    "Ошибка при создании доски.",
                     e
                 )
             }
@@ -154,7 +154,7 @@ class FirestoreClass {
             .addOnFailureListener { e ->
 
                 activity.hideProgressDialog()
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Ошибка при создании доски.", e)
             }
     }
 
@@ -172,7 +172,7 @@ class FirestoreClass {
             }
             .addOnFailureListener { e ->
                 activity.hideProgressDialog()
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Ошибка при создании доски.", e)
             }
     }
 
@@ -185,7 +185,7 @@ class FirestoreClass {
             .document(board.documentId)
             .update(taskListHashMap)
             .addOnSuccessListener {
-                Log.e(activity.javaClass.simpleName, "TaskList updated successfully.")
+                Log.e(activity.javaClass.simpleName, "Список задач успешно обновлен.")
 
                 if (activity is TaskListActivity) {
                     activity.addUpdateTaskListSuccess()
@@ -199,7 +199,7 @@ class FirestoreClass {
                 } else if (activity is TaskListActivity) {
                     activity.hideProgressDialog()
                 }
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Ошибка при создании доски.", e)
             }
     }
 
@@ -235,7 +235,7 @@ class FirestoreClass {
                 }
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while creating a board.",
+                    "Ошибка при создании доски.",
                     e
                 )
             }
@@ -255,7 +255,7 @@ class FirestoreClass {
                     activity.memberDetails(user)
                 } else {
                     activity.hideProgressDialog()
-                    activity.showErrorSnackBar("No such member found.")
+                    activity.showErrorSnackBar("Такого участника не нашли.")
                 }
 
             }
@@ -263,7 +263,7 @@ class FirestoreClass {
                 activity.hideProgressDialog()
                 Log.e(
                     activity.javaClass.simpleName,
-                    "Error while getting user details",
+                    "Ошибка при получении сведений о пользователе",
                     e
                 )
             }
@@ -278,12 +278,12 @@ class FirestoreClass {
             .document(board.documentId)
             .update(assignedToHashMap)
             .addOnSuccessListener {
-                Log.e(activity.javaClass.simpleName, "TaskList updated successfully.")
+                Log.e(activity.javaClass.simpleName, "Список задач успешно обновлен.")
                 activity.memberAssignSuccess(user)
             }
             .addOnFailureListener { e ->
                 activity.hideProgressDialog()
-                Log.e(activity.javaClass.simpleName, "Error while creating a board.", e)
+                Log.e(activity.javaClass.simpleName, "Ошибка при создании доски.", e)
             }
     }
 

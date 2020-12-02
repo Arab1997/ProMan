@@ -79,7 +79,7 @@ class CardDetailsActivity : BaseActivity() {
             if (et_name_card_details.text.toString().isNotEmpty()) {
                 updateCardDetails()
             } else {
-                Toast.makeText(this@CardDetailsActivity, "Enter card name.", Toast.LENGTH_SHORT)
+                Toast.makeText(this@CardDetailsActivity, "Введите имя", Toast.LENGTH_SHORT)
                     .show()
             }
         }

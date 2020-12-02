@@ -109,7 +109,7 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
         ) {
             FirestoreClass().getBoardsList(this@MainActivity)
         } else {
-            Log.e("Cancelled", "Cancelled")
+            Log.e("Cancelled", "Отмененный")
         }
     }
 

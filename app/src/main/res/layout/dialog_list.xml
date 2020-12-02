@@ -29,7 +29,7 @@
                 android:textSize="@dimen/dialog_list_title_text_size"
                 android:textStyle="bold"
                 android:visibility="visible"
-                tools:text="Select" />
+                tools:text="Выбрать" />
 
             <View
                 android:layout_width="match_parent"

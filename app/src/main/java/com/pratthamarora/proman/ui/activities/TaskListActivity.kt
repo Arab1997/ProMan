@@ -77,7 +77,7 @@ class TaskListActivity : BaseActivity() {
             showProgressDialog(resources.getString(R.string.please_wait))
             FirestoreClass().getBoardDetails(this@TaskListActivity, mBoardDocumentId)
         } else {
-            Log.e("Cancelled", "Cancelled")
+            Log.e("Cancelled", "Отмененный")
         }
     }
 
@@ -97,7 +97,7 @@ class TaskListActivity : BaseActivity() {
 
     fun createTaskList(taskListName: String) {
 
-        Log.e("Task List Name", taskListName)
+        Log.e("Имя Списка Задач", taskListName)
 
         val task = Task(taskListName, FirestoreClass().getCurrentUserID())
 

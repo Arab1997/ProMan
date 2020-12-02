@@ -116,7 +116,7 @@ class MembersActivity : BaseActivity() {
                 showProgressDialog(resources.getString(R.string.please_wait))
                 FirestoreClass().getMemberDetails(this@MembersActivity, email)
             } else {
-                showErrorSnackBar("Please enter members email address.")
+                showErrorSnackBar("Пожалуйста, введите адрес электронной почты участников.")
             }
         })
         dialog.tv_cancel.setOnClickListener(View.OnClickListener {
@@ -184,10 +184,10 @@ class MembersActivity : BaseActivity() {
                 val jsonRequest = JSONObject()
 
                 val dataObject = JSONObject()
-                dataObject.put(Constants.FCM_KEY_TITLE, "Assigned to the Board $boardName")
+                dataObject.put(Constants.FCM_KEY_TITLE, "Назначенный в правление $boardName")
                 dataObject.put(
                     Constants.FCM_KEY_MESSAGE,
-                    "You have been assigned to the new board by ${mAssignedMembersList[0].name}"
+                    "Вы были назначены в новый совет директоров ${mAssignedMembersList[0].name}"
                 )
 
                 jsonRequest.put(Constants.FCM_KEY_DATA, dataObject)

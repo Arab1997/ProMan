@@ -41,7 +41,7 @@ open class BoardItemsAdapter(
                 .into(holder.itemView.iv_board_image)
 
             holder.itemView.tv_name.text = model.name
-            holder.itemView.tv_created_by.text = "Created By : ${model.createdBy}"
+            holder.itemView.tv_created_by.text = "Создал: ${model.createdBy}"
 
             holder.itemView.setOnClickListener {
 

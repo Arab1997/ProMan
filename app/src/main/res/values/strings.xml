@@ -1,66 +1,66 @@
 <resources>
-    <string name="app_name">ProMan</string>
+    <string name="app_name">Менеджер Задач</string>
 
     <string name="image_contentDescription">image</string>
-    <string name="let_s_get_started_text">Let\'s Get started</string>
-    <string name="intro_text_description">Collaborate and Plan Together Across Multiple Devices on ProMan’s Minimalist Interface.</string>
-    <string name="sign_in">SIGN IN</string>
-    <string name="sign_up">SIGN UP</string>
+    <string name="let_s_get_started_text">начнём</string>
+    <string name="intro_text_description">Сотрудничайте и планируйте вместе на нескольких устройствах с минималистичным интерфейсом ProMan.</string>
+    <string name="sign_in">ВОЙТИ</string>
+    <string name="sign_up">РЕГИСТРАЦИЯ</string>
 
-    <string name="sign_up_description_text">Enter your name, email id and password to register with us.</string>
-    <string name="name">Name</string>
-    <string name="password">Password</string>
-    <string name="email">Email</string>
+    <string name="sign_up_description_text">Введите свое имя, адрес электронной почты и пароль, чтобы зарегистрироваться у нас.</string>
+    <string name="name">Имя</string>
+    <string name="password">Пароль</string>
+    <string name="email">Эл-почта</string>
 
-    <string name="sign_in_description_text">Enter your name, email id and password to sign in.</string>
+    <string name="sign_in_description_text">Введите свое имя, адрес электронной почты и пароль для входа в систему.</string>
 
-    <string name="please_click_back_again_to_exit">Please click back again to exit.</string>
-    <string name="please_wait">Please Wait&#8230;</string>
+    <string name="please_click_back_again_to_exit">Пожалуйста, нажмите кнопку назад еще раз, чтобы выйти.</string>
+    <string name="please_wait">пожалуйста подождите&#8230;</string>
 
-    <string name="nav_my_profile">My Profile</string>
-    <string name="nav_sign_out">Sign Out</string>
+    <string name="nav_my_profile">Мой профиль</string>
+    <string name="nav_sign_out">Выход</string>
 
-    <string name="mobile">Mobile</string>
-    <string name="update">UPDATE</string>
-    <string name="my_profile">My Profile</string>
+    <string name="mobile">Мобильный</string>
+    <string name="update">ОБНОВИТЬ</string>
+    <string name="my_profile">Мой профиль</string>
 
-    <string name="create_board_title">Create Board</string>
-    <string name="create">CREATE</string>
-    <string name="board_name">Board Name</string>
+    <string name="create_board_title">Создать Доску</string>
+    <string name="create">СОЗДАТЬ</string>
+    <string name="board_name">Название Доску</string>
 
-    <string name="no_boards_are_available">No Boards are available!!!</string>
+    <string name="no_boards_are_available">Доски не доступны!!!</string>
 
-    <string name="action_add_list">Add List</string>
-    <string name="hint_list_name">List Name</string>
-    <string name="action_add_card">Add Card</string>
-    <string name="hint_card_name">Card Name</string>
-    <string name="add_list">Add List</string>
+    <string name="action_add_list">Добавить Список</string>
+    <string name="hint_list_name">Имя списка</string>
+    <string name="action_add_card">Добавить Задачи</string>
+    <string name="hint_card_name">Имя задачи</string>
+    <string name="add_list">Добавить Список</string>
 
-    <string name="members">Members</string>
+    <string name="members">Участники</string>
 
-    <string name="add_member">Add Member</string>
-    <string name="cancel">CANCEL</string>
-    <string name="add">ADD</string>
-    <string name="search_member">Search Member</string>
+    <string name="add_member">Добавить Участник</string>
+    <string name="cancel">ОТМЕНЯТЬ</string>
+    <string name="add">ДОБАВЛЯТЬ</string>
+    <string name="search_member">Поисковый Задачи</string>
 
-    <string name="label_color">Label Color</string>
-    <string name="select_color">Select Color</string>
-    <string name="select_members">Select Members</string>
+    <string name="label_color">Цвет Этикетки</string>
+    <string name="select_color">Выбранный цвет</string>
+    <string name="select_members">Выбранный Участник</string>
 
-    <string name="due_date">Due Date</string>
-    <string name="select_due_date">Select Due Date</string>
-    <string name="delete_card">Delete Card</string>
+    <string name="due_date">Срок Выполнения</string>
+    <string name="select_due_date">Выберите Срок Выполнения</string>
+    <string name="delete_card">Удалить Задачу</string>
 
-    <string name="alert">Alert</string>
-    <string name="confirmation_message_to_delete_card">Are you sure you want to delete card \'%1$s\'?</string>
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
+    <string name="alert">Тревога</string>
+    <string name="confirmation_message_to_delete_card">Вы уверены, что хотите удалить задачу \'%1$s\'?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
 
-    <string name="str_select_label_color">Select Label Color</string>
+    <string name="str_select_label_color">Выберите Цвет Метки</string>
 
-    <string name="str_select_member">Select Member</string>
+    <string name="str_select_member">Выбранный элемент</string>
 
 
     <string name="default_notification_channel_id">proman_notification_channel_id</string>
-    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password">Забыли Пароль?</string>
 </resources>

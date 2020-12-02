@@ -33,14 +33,14 @@ class SignInActivity : BaseActivity() {
                 if (it.isSuccessful) {
                     Toast.makeText(
                         this,
-                        "Please check your email to reset password",
+                        "Пожалуйста, проверьте свою электронную почту, чтобы сбросить пароль",
                         Toast.LENGTH_LONG
                     )
                         .show()
                 } else {
                     Toast.makeText(
                         this,
-                        "error occurred",
+                        "произошла ошибка",
                         Toast.LENGTH_LONG
                     )
                         .show()
@@ -49,7 +49,7 @@ class SignInActivity : BaseActivity() {
         } else {
             Toast.makeText(
                 this,
-                "Please enter valid email",
+                "Пожалуйста, введите действительный адрес электронной почты",
                 Toast.LENGTH_LONG
             )
                 .show()
@@ -96,11 +96,11 @@ class SignInActivity : BaseActivity() {
     private fun validateForm(email: String, password: String): Boolean {
         return when {
             TextUtils.isEmpty(email) -> {
-                showErrorSnackBar("Please enter email.")
+                showErrorSnackBar("Пожалуйста, введите адрес электронной почты.")
                 false
             }
             TextUtils.isEmpty(password) -> {
-                showErrorSnackBar("Please enter password.")
+                showErrorSnackBar("Пожалуйста, введите пароль.")
                 false
             }
             else -> {
@@ -114,7 +114,7 @@ class SignInActivity : BaseActivity() {
         hideProgressDialog()
         Toast.makeText(
             this@SignInActivity,
-            "You have successfully signed in.",
+            "Вы успешно вошли в систему.",
             Toast.LENGTH_SHORT
         ).show()
         val intent = Intent(this, MainActivity::class.java)

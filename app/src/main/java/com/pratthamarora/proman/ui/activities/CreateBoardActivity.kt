@@ -81,7 +81,7 @@ class CreateBoardActivity : BaseActivity() {
                 //Displaying another toast if permission is not granted
                 Toast.makeText(
                     this,
-                    "Oops, you just denied the permission for storage. You can also allow it from settings.",
+                    "Ой,вы только что отказали в разрешении на хранение. Вы также можете разрешить это в настройках.",
                     Toast.LENGTH_LONG
                 ).show()
             }

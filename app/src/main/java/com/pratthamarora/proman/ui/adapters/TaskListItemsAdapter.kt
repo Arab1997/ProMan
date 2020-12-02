@@ -76,7 +76,7 @@ open class TaskListItemsAdapter(
                         context.createTaskList(listName)
                     }
                 } else {
-                    Toast.makeText(context, "Please Enter List Name.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Пожалуйста, Введите Имя Списка.", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -100,7 +100,7 @@ open class TaskListItemsAdapter(
                         context.updateTaskList(position, listName, model)
                     }
                 } else {
-                    Toast.makeText(context, "Please Enter List Name.", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "Пожалуйста, Введите Имя Списка.", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -128,7 +128,7 @@ open class TaskListItemsAdapter(
                             context.addCardToTaskList(position, cardName)
                         }
                     } else {
-                        Toast.makeText(context, "Please Enter Card Detail.", Toast.LENGTH_SHORT)
+                        Toast.makeText(context, "Пожалуйста, Введите Данные Карты.", Toast.LENGTH_SHORT)
                             .show()
                     }
                 }
@@ -217,10 +217,10 @@ open class TaskListItemsAdapter(
 
     private fun alertDialogForDeleteList(position: Int, title: String) {
         val builder = AlertDialog.Builder(context)
-        builder.setTitle("Alert")
-        builder.setMessage("Are you sure you want to delete $title.")
+        builder.setTitle("Тревога")
+        builder.setMessage("Вы уверены, что хотите удалить $title.")
         builder.setIcon(android.R.drawable.ic_dialog_alert)
-        builder.setPositiveButton("Yes") { dialogInterface, which ->
+        builder.setPositiveButton("Да") { dialogInterface, which ->
             dialogInterface.dismiss() // Dialog will be dismissed
 
             if (context is TaskListActivity) {
@@ -229,7 +229,7 @@ open class TaskListItemsAdapter(
         }
 
         //performing negative action
-        builder.setNegativeButton("No") { dialogInterface, which ->
+        builder.setNegativeButton("Нет") { dialogInterface, which ->
             dialogInterface.dismiss() // Dialog will be dismissed
         }
         // Create the AlertDialog

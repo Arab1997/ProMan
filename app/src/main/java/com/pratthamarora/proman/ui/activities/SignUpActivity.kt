@@ -78,15 +78,15 @@ class SignUpActivity : BaseActivity() {
     private fun validateForm(name: String, email: String, password: String): Boolean {
         return when {
             TextUtils.isEmpty(name) -> {
-                showErrorSnackBar("Please enter name.")
+                showErrorSnackBar("Пожалуйста, введите имя.")
                 false
             }
             TextUtils.isEmpty(email) -> {
-                showErrorSnackBar("Please enter email.")
+                showErrorSnackBar("Пожалуйста, введите адрес электронной почты.")
                 false
             }
             TextUtils.isEmpty(password) -> {
-                showErrorSnackBar("Please enter password.")
+                showErrorSnackBar("Пожалуйста, введите пароль.")
                 false
             }
             else -> {
@@ -99,7 +99,7 @@ class SignUpActivity : BaseActivity() {
 
         Toast.makeText(
             this@SignUpActivity,
-            "You have successfully registered.",
+            "Вы успешно зарегистрировались.",
             Toast.LENGTH_SHORT
         ).show()
 

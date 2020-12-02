@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "802925848472",
+    "firebase_url": "https://proman-ee034.firebaseio.com",
+    "project_id": "proman-ee034",
+    "storage_bucket": "proman-ee034.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802925848472:android:a9cb67fb817aba810faded",
+        "android_client_info": {
+          "package_name": "com.pratthamarora.projekts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802925848472-6nmlo17tjoj46tpt9fd65tit1bc01b4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pratthamarora.projekts",
+            "certificate_hash": "12953bdc111deb6333004c0fb022f2bf199cfc20"
+          }
+        },
+        {
+          "client_id": "802925848472-pr98n1nsq5ah7jvn5d24jr6hln64t689.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAILLSiJe96bqxHXiNAdxddNk5ka7yZ9vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "802925848472-pr98n1nsq5ah7jvn5d24jr6hln64t689.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
