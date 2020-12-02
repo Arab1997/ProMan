@@ -27,7 +27,8 @@
         android:layout_marginTop="@dimen/nav_content_margin_top"
         android:layout_marginEnd="@dimen/nav_content_margin_StartEnd"
         android:layout_marginBottom="@dimen/nav_content_margin_bottom"
-        android:text="@string/app_name"
+        android:text="Менеджер"
+        android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="@dimen/nav_user_name_text_size" />
 
